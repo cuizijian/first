@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    崔子健的blog
+    <h1>崔子健的blog</h1>
+    <el-calendar v-model="value">
+    </el-calendar>
   </div>
 </template>
 
@@ -9,7 +11,8 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      value: new Date()
     }
   }
 }
@@ -17,7 +20,9 @@ export default {
 
 <style scoped>
 h1, h2 {
-  font-weight: normal;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
 }
 ul {
   list-style-type: none;
