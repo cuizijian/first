@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>崔子健的blog</h1>
+    <h1>{{msg}}</h1>
     <el-calendar v-model="value">
     </el-calendar>
   </div>
@@ -11,7 +11,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: '崔子健的blog',
       value: new Date()
     }
   }
