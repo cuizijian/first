@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{msg1}}</h1>
+    <Head :title='msg' />
     <div class="calendar">
       <el-calendar v-model="value" slot="dateCell" />
     </div>
@@ -8,17 +8,21 @@
 </template>
 
 <script>
+import Head from '../components/Head.vue'
 export default {
-  name: 'HelloWorld',
+  name: 'Homepage',
+  components: {
+    Head
+  },
   data () {
     return {
       msg: '崔子健的blog',
-      value: new Date()
+      value: new Date() + 1
     }
   },
   computed: {
     msg1: function () {
-      return this.msg + '1'
+      return this.msg
     }
   },
   // vue生命周期
