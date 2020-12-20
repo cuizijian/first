@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import First from '@/components/First'
+import First from '@/views/Homepage'
 
 Vue.use(Router)
 
