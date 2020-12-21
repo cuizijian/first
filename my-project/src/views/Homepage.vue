@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <Head :title='msg' />
+    <!-- <Head :title='msg' /> -->
     <div class="calendar">
       <el-calendar v-model="value" slot="dateCell" />
     </div>
@@ -8,12 +8,8 @@
 </template>
 
 <script>
-import Head from '../components/Head.vue'
 export default {
   name: 'Homepage',
-  components: {
-    Head
-  },
   data () {
     return {
       msg: '崔子健的blog',
@@ -89,11 +85,11 @@ li {
 a {
   color: #42b983;
 }
-.calendar{
+/* .calendar{
   width: 400px;
   height: 400px;
 }
 .el-calendar{
   height: 400px !important;
-}
+} */
 </style>
