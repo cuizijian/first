@@ -12,7 +12,7 @@
                     :key="route.path + '/' + item.path"
                     :index="item.path"
                     >
-                    <i class="el-icon-menu"></i>
+                    <i v-bind:class="item.meta.icon"></i>
                     <span slot="title">{{ item.name }}</span>
                 </el-menu-item>
                 </template>
@@ -38,8 +38,8 @@ export default {
     Head
   },
   created () {
-    this.defaultActive = this.$router.options.routes.children.path
-    console.log(this.$router.options.routes)
+    console.log(this.$router)
+    // this.defaultActive = this.$router.histroy.current.path
   },
   data () {
     return {
